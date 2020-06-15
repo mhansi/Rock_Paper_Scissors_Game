@@ -30,7 +30,8 @@ section{
     flex-direction: column;
     align-items:center;
     justify-content: space-around;
-    opacity: 0;
+    transition: opacity 0.5s ease;
+  
 }.intro h1{
     font-size: 50px;;
 }
@@ -51,6 +52,7 @@ section{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    transition: opacity 0.5s ease 0.5s;
 }
 .winner{
     color:rgb(224, 224, 224);
@@ -66,7 +68,7 @@ section{
 .computer-hand{
     transform: rotatey(180deg);
 }
-.div.fadeOut{
+div.fadeOut{
     opacity: 0;
     pointer-events:none;
 }
